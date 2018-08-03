@@ -7,25 +7,23 @@ $(document).ready(function() {
     
     //functions
 
+
+    //on-functions
+
     $(window).on("scroll", function() {
 
-        if ($(this).scrollTop() > 300) {
+        if ( $(this).scrollTop() > 200) {
 
-            $("nav").fadeIn(500);
+            $("nav").fadeIn(400);
 
         } 
         
         else {
 
-            $("nav").fadeOut(500);
+            $("nav").fadeOut(400);
         }
     });
 
 
 
-
-
-
-
-
-}
+});
