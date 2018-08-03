@@ -1,0 +1,37 @@
+nav {
+    display: none;
+}
+
+.headerText {
+    color:white;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    top: 60%;
+}
+
+footer {
+    background-color: purple;
+}
+
+#allContent {
+    background-color: black;
+    height: 1000px;
+}
+
+.parallax {
+    height: 100%;
+    background-image: url('https://cdn.pixabay.com/photo/2017/12/24/23/58/triangle-3037789_960_720.png');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* phone media queries go here */
