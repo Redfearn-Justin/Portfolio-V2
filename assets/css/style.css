@@ -1,3 +1,13 @@
+label {
+    color: white;
+}
+
+form {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
 /*TO FLIP A SHAPE: transform: rotate(90deg) scaleX(-1); */
 .showcaseShape {
     width: 150px;
@@ -5,7 +15,6 @@
     -webkit-transform: skew(20deg);
        -moz-transform: skew(20deg);
          -o-transform: skew(20deg);
-    background: red;
   }
   
   #portfolioHeader {
@@ -32,7 +41,9 @@
     letter-spacing: 1px;
     position: relative;
     top: 60%;
-    left: 33%;
+    left: 35%;
+    /* below included for parallax remedy */
+    z-index: 0;
   }
   
   footer {
@@ -42,6 +53,9 @@
   #allContent {
     background-color: black;
     height: 1000px;
+    /* below included for parallax remedy */
+    z-index: 1;
+
   }
   
   .parallax {
@@ -53,6 +67,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* below included for parallax remedy */
+    z-index: -1;
   }
   
   body, html {
