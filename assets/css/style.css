@@ -5,8 +5,9 @@ label {
 
 /*TO FLIP A SHAPE: transform: rotate(90deg) scaleX(-1); */
 .showcaseShape {
-    width: 150px;
+    width: 100px;
     height: 250px;
+    margin: 2%;
     -webkit-transform: skew(20deg);
        -moz-transform: skew(20deg);
          -o-transform: skew(20deg);
@@ -16,11 +17,11 @@ label {
     text-align: center;
   }
   
-  .navbar {
+  nav {
     top:0px;
     position: fixed;
     width:100%;
-    height:75px;
+    height:50px;
     /* background-color:#DDDDDD;
     color: #FFFFFF; */
     z-index:9999;
@@ -63,7 +64,7 @@ label {
     /* below included for parallax remedy */
     z-index: -1;
   }
-  
+
   #aboutMeSection {
     padding-top: 10%;
     padding-bottom: 10%;

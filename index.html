@@ -42,29 +42,14 @@
 
 <body>
 
-  <!-- nav bar (NEED TO FIX: add. content not sitting on one line) -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"> Justin Redfearn</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse form-inline justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
+  <!-- nav bar  -->
+  <nav class="nav bg-light">
+    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#">Disabled</a>
   </nav>
+
 
   <div id="titleScreen" class="parallax">
     <h1 class="headerText">
@@ -87,7 +72,7 @@
 
         <div class="col-md-10">
           <div class="media">
-            <img class="align-self-center mr-3" src="http://via.placeholder.com/250x250" alt="Generic placeholder image">
+            <img class="align-self-center mr-4" src="http://via.placeholder.com/250x250" alt="Generic placeholder image">
             <div class="media-body">
               <h3 class="mt-0 text-white"> About Me </h3>
               <p class="text-white">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
@@ -126,32 +111,32 @@
 
       <div class="row">
 
-        <!--  empty space for styling -->
-        <div class="col-md-1">
+        <!-- empty space for styling -->
+        <div class="col-md-auto">
         </div>
 
         <!--  images/shapes go here-->
-        <div class="col-md-auto">
+        <div class="col-md-10 shapeContainer justify-content-center">
           <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 1">
+            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 1">
           </a>
           <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 2">
+            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 2">
           </a>
           <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 3">
+            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 3">
           </a>
           <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 4">
+            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 4">
           </a>
           <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 5">
+            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 5">
           </a>
         </div>
 
-        <!--  empty space for styling -->
-        <div class="col-md-1">
-        </div>
+         <!-- empty space for styling
+        <div class="col-auto">
+        </div> -->
 
       </div> <!-- closes last row -->
 
@@ -198,7 +183,7 @@
     </div>
 
     <div id="footerBlurb" class="justify-content-center">
-        Coded with Passion By JR
+        Coded with Passion By <a href="#"> This Guy </a>
     </div>
 
   </footer>

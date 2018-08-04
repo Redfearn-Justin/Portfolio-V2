@@ -21,17 +21,16 @@ $(document).ready(function() {
     
     //functions
 
+    function hideNavBar() {
+        $("nav").hide();
+    }
+
     function clearFields() {
 
-        $("input").each(function() {
+        $("input" && "textarea").each(function() {
     
           $(this).val("");
     
-        });
-
-        $("textarea").each(function() {
-
-            $(this).val("");
         });
     
     }
@@ -90,7 +89,7 @@ $(document).ready(function() {
 
     $(window).on("scroll", function() {
 
-        if ( $(this).scrollTop() > 200) {
+        if ( $(this).scrollTop() > 250) {
 
             $("nav").fadeIn(400);
 
@@ -100,7 +99,12 @@ $(document).ready(function() {
 
             $("nav").fadeOut(400);
         }
+
     });
+
+    //function calls
+
+    hideNavBar();
 
 
 
