@@ -3,87 +3,174 @@
 
 <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <!--jQuery Link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--jQuery Link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Personal JS -->
-    <script src="assets/javascript/app.js"></script>
+  <!-- Personal JS -->
+  <script src="assets/javascript/app.js"></script>
 
-    <!-- Google JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Google JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" crossorigin="anonymous">
 
-    <!-- Personal CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Personal CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- google fonts CSS goes here! -->
+  <!-- google fonts CSS goes here! -->
 
-    <title> A Portfolio: JR </title>
+  <title> A Portfolio: JR </title>
 
 </head>
 
 <body>
 
-    <div id="titleScreen" class="parallax">
-        <h1 class="headerText">
-            Greetings Traveler!
-        </h1>
-        <h6 class="headerText">
-            Stay awhile and listen..
-        </h6>
+  <!-- nav bar (NEED TO FIX: add. content not sitting on one line) -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"> Justin Redfearn</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse form-inline justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- nav bar (might have nav bar ONLY appear when at a certain scroll mark)-->
-    <!-- maybe include timer in navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar w/ text</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            </ul>
-            <span class="navbar-text">
-            Navbar text with an inline element
-            </span>
+  <div id="titleScreen" class="parallax">
+    <h1 class="headerText">
+      Greetings Traveler!
+    </h1>
+    <h6 class="headerText">
+      Stay awhile and listen..
+    </h6>
+  </div>
+
+  <div id="allContent">
+
+    <!-- About Me Section  -->
+    <div id="aboutMeSection" class="container">
+      <div class="row">
+
+        <!--  empty row for styling -->
+        <div class="col-md-auto">
         </div>
-    </nav>
 
-    <div id="allContent">
+        <div class="col-md-10">
+          <div class="media">
+            <img class="align-self-center mr-3" src="http://via.placeholder.com/250x250" alt="Generic placeholder image">
+            <div class="media-body">
+              <h3 class="mt-0 text-white"> About Me </h3>
+              <p class="text-white">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <p class="mb-0 text-white">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+          </div>
+        </div>
 
-    </div>
+        <!--  empty row for styling -->
+        <div class="col-md-auto">
+        </div>
+
+      </div>
+
+    </div> <!--closes #aboutMeSection container -->
+
+    <!--  Portfolio Section -->
+    <div id="portfolioSection" class="container">
+
+      <!--  Header row (MAY NOT REQUIRE)-->
+      <div class="row">
+
+        <!--  empty space for styling -->
+        <div class="col-md-2">
+        </div>
+
+        <div class="col-md-8">
+          <h3 id="portfolioHeader" class="text-white"> Portfolio </h3>
+        </div>
+
+        <!--  empty space for styling -->
+        <div class="col-md-2">
+        </div>
+
+      </div>  <!-- closes row -->
+
+      <div class="row">
+
+        <!--  empty space for styling -->
+        <div class="col-md-1">
+        </div>
+
+        <!--  images/shapes go here-->
+        <div class="col-md-auto">
+          <a href="#">
+            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 1">
+          </a>
+          <a href="#">
+            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 2">
+          </a>
+          <a href="#">
+            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 3">
+          </a>
+          <a href="#">
+            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 4">
+          </a>
+          <a href="#">
+            <img class="showcaseShape" src="http://via.placeholder.com/150x250" alt="Project 5">
+          </a>
+        </div>
+
+        <!--  empty space for styling -->
+        <div class="col-md-1">
+        </div>
+
+      </div> <!-- closes last row -->
+
+    </div> <!--closes #portfolioSection container -->
+
+  </div> <!--closes #allContent -->
 
 
-    <!-- footer -->
-    <footer>
-        <!-- brand logos/links go here -->
-        <a href="#">
-            <img src="assets/media/GitHub-Mark-64px.png" alt="Github">
-        </a>
+  <!-- footer -->
+  <footer>
+    <a href="#">
+        <img class="logos" src="assets/media/GitHub-Mark-64px.png" alt="Github">
+    </a>
 
-    </footer>
+    <!--  LinkedIn goes here -->
+    <a href="#">
+        <img class="logos" src="http://via.placeholder.com/64x64" alt="Github">
+    </a>
+    <!--  Additional link goes here-->
+    <a href="#">
+        <img class="logos" src="http://via.placeholder.com/64x64" alt="Github">
+    </a>
+
+  </footer>
 
 </body>
 
