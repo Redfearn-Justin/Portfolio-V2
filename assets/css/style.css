@@ -5,6 +5,13 @@
     --darkishGrey: #b3b1b1;
 }
 
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 #selfPicture {
     height: 350px;
     width: 350px;
@@ -32,7 +39,6 @@ label {
 }
   
 #portfolioHeader {
-    padding-bottom: 5%;
     text-align: center;
 }
 
@@ -119,9 +125,18 @@ body, html {
     margin: 0;
 }
 
+img:hover {
+
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px 8px var(--primaryColor);
+}
+
+
 /* phone media queries go here */
 
 @media only screen and (min-width:813px) {
+
 
     .portfolioEntry {
         margin: 2%;
