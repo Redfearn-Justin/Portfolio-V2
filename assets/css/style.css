@@ -8,12 +8,13 @@
 #selfPicture {
     height: 350px;
     width: 350px;
-    background-size: contain;
+    background-size: cover;
 }
 
 .portfolioEntry {
     height: 250px;
     width: 250px;
+    margin: 2%;
 }
 
 label {
@@ -66,8 +67,13 @@ nav {
     z-index: 0;
 }
 
+.emptySpace {
+    height:100px;
+}
+
 footer {
     background-color: var(--primaryColor);
+    height: 12%;
 }
 
 #allContent {
@@ -103,8 +109,8 @@ footer {
 
 form {
     padding: 10% 2% 10% 2%;
-    margin-left: 7.65%;
-    margin-right: 7.65%;
+    margin-left: 7.7%;
+    margin-right: 7.7%;
     background-color: var(--softGrey);
 }
 
@@ -117,13 +123,9 @@ body, html {
 
 @media only screen and (min-width:813px) {
 
-/* .showcaseShape:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0px 0px 10px 1px inset var(--secondaryColorLightOpacity);
-    z-index: 100;
-    width: 150px;
-
-
-} */
+    .portfolioEntry {
+        margin: 2%;
+    }
 
     nav {
         display: none;
