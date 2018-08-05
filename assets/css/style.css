@@ -1,7 +1,6 @@
 :root {
-    --primaryColor: #380a94;
-    --primaryColorOpaque: #3c129193;
-    --secondaryColor: rgb(117, 2, 2);
+    --primaryColor: rgba(2, 61, 150, 0.658);
+    --primaryColor: rgb(2, 61, 150);
     --softGrey: #d2d2d2;
     --darkishGrey: #b3b1b1;
 }
@@ -29,12 +28,6 @@ label {
     color: black;
 }
 
-/* .showcaseShape {
-    width: 100px;
-    height: 250px;
-    margin: 2%;
-} */
-
 #contactHeader {
     text-align: center;
 }
@@ -47,11 +40,6 @@ label {
     margin-top: 3%;
     margin-bottom: 5%;
 }
-
-/* .navlink:hover { FIX NAVBAR HOVER EFFECTS!!!!
-    background-color: var(--secondaryColor);
-    color: white;
-} */
 
 nav {
     top:0px;
@@ -74,26 +62,12 @@ nav {
     z-index: 0;
 }
 
-/* .footerBlurb {
-    text-align: center;
-} */
-
-/* .logos {
-    padding: 0 5% 0 5%;
-    margin: 20% 0 10% 0;
-} */
-
 .emptySpace {
     height:100px;
 }
 
-/* .footer {
-    background-color: var(--primaryColor);
-    height: 15%;
-} */
-
 #allContent {
-    background-color: var(--secondaryColor);
+    background-color: var(--primaryColor);
     /* below included for parallax remedy */
     z-index: 1;
 }
@@ -136,7 +110,7 @@ body, html {
 }
 
 footer {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(34, 34, 34);
 }
 
 
