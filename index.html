@@ -43,11 +43,10 @@
 <body>
 
   <!-- nav bar  -->
-  <nav class="nav bg-light">
-    <a class="nav-link active" href="#">Active</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link" href="#">Link</a>
-    <a class="nav-link disabled" href="#">Disabled</a>
+  <nav class="nav bg-dark justify-content-center">
+    <a class="nav-link text-white" href="#">About</a>
+    <a class="nav-link text-white" href="#">Portfolio</a>
+    <a class="nav-link text-white" href="#">Contact</a>
   </nav>
 
 
@@ -72,11 +71,11 @@
 
         <div class="col-md-10">
           <div class="media">
-            <img class="align-self-center mr-4" src="http://via.placeholder.com/250x250" alt="Generic placeholder image">
+            <img class="align-self-center mr-5" id="selfPicture" src="assets/media/selfPicture.jpg" alt="Picture Of Me">
             <div class="media-body">
-              <h3 class="mt-0 text-white"> About Me </h3>
-              <p class="text-white">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              <p class="mb-0 text-white">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <h3 class="mt-0 text-black"> About Me </h3>
+              <p class="text-black align-self-center">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              <p class="mb-0 text-black">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             </div>
           </div>
         </div>
@@ -89,6 +88,7 @@
 
     </div> <!--closes #aboutMeSection container -->
 
+
     <!--  Portfolio Section -->
     <div id="portfolioSection" class="container">
 
@@ -100,7 +100,7 @@
         </div>
 
         <div class="col-md-8">
-          <h3 id="portfolioHeader" class="text-white"> Portfolio </h3>
+          <h3 id="portfolioHeader" class="text-black"> Portfolio </h3>
         </div>
 
         <!--  empty space for styling -->
@@ -109,43 +109,76 @@
 
       </div>  <!-- closes row -->
 
-      <div class="row">
+      <div class="row align-items-center" id="portfolioRow1"> <!--1st row of portfolio content-->
 
         <!-- empty space for styling -->
-        <div class="col-md-auto">
+        <div class="col">
         </div>
 
-        <!--  images/shapes go here-->
-        <div class="col-md-10 shapeContainer justify-content-center">
+        <div class="col-md-3">
           <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 1">
-          </a>
-          <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 2">
-          </a>
-          <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 3">
-          </a>
-          <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 4">
-          </a>
-          <a href="#">
-            <img class="showcaseShape" src="http://via.placeholder.com/100x250" alt="Project 5">
+            <img class="portfolioEntry" src="http://via.placeholder.com/250x250" alt="Project 1">
           </a>
         </div>
 
-         <!-- empty space for styling
-        <div class="col-auto">
-        </div> -->
+        <div class="col-md-3">
+            <a href="#">
+                <img class="portfolioEntry" src="http://via.placeholder.com/250x250" alt="Project 2">
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+                <img class="portfolioEntry" src="http://via.placeholder.com/250x250" alt="Project 3">
+            </a>
+        </div>
+
+        <!-- empty space for styling -->
+        <div class="col">
+        </div>
+
+      </div> <!--closes 1st row-->
+        
+      <div class="row align-items-center" id="portfolioRow2"> <!--2nd row of portfolio content-->
+
+        <!-- empty space for styling -->
+        <div class="col">
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+            <img class="portfolioEntry" src="http://via.placeholder.com/250x250" alt="Project 4">
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+                <img class="portfolioEntry" src="http://via.placeholder.com/250x250" alt="Project 5">
+            </a>
+        </div>
+
+        <div class="col-md-3">
+            <a href="#">
+                <img class="portfolioEntry" src="http://via.placeholder.com/250x250" alt="Project 6">
+            </a>
+        </div>
+
+        <!-- empty space for styling -->
+        <div class="col">
+        </div>
+
 
       </div> <!-- closes last row -->
 
-    </div> <!--closes #portfolioSection container -->
+    </div> <!-- closes #portfolioSection container -->
+
 
     <!-- contact form section begins -->
 
     <form>
-        <h3 class="display-6 text-white"> Contact Me </h3>
+        <h3 id="contactHeader" class="display-6 text-black"> Contact Me </h3>
+        <br>
+        <h5 class="text-black"> Let's get in touch!</h5>
         <br>
         <div class="form-group">
             <label for="nameInput"> Full Name </label>
@@ -165,7 +198,7 @@
   </div> <!--closes #allContent -->
 
 
-  <!-- footer -->
+  <!-- footer (CONSIDER MAKING INTO CONTAINER -->
   <footer>
     <div id="logoContainer justify-content-right">
         <a href="#">

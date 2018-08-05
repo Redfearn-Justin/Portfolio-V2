@@ -1,35 +1,59 @@
-label {
-    color: white;
+:root {
+    --primaryColor: #63489b;
+    --secondaryColor: rgb(119, 2, 2);
+    --softGrey: #d2d2d2;
+    --darkishGrey: #b3b1b1;
 }
 
+#selfPicture {
+    height: 350px;
+    width: 350px;
+    background-size: contain;
+}
 
-/*TO FLIP A SHAPE: transform: rotate(90deg) scaleX(-1); */
-.showcaseShape {
+.portfolioEntry {
+    height: 250px;
+    width: 250px;
+}
+
+label {
+    color: black;
+}
+
+/* .showcaseShape {
     width: 100px;
     height: 250px;
     margin: 2%;
-    -webkit-transform: skew(20deg);
-       -moz-transform: skew(20deg);
-         -o-transform: skew(20deg);
-  }
-  
-  #portfolioHeader {
+} */
+
+#contactHeader {
     text-align: center;
-  }
+}
   
-  nav {
+#portfolioHeader {
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#portfolioRow1, #portfolioRow2 {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+/* .navlink:hover { FIX NAVBAR HOVER EFFECTS!!!!
+    background-color: var(--secondaryColor);
+    color: white;
+} */
+
+nav {
     top:0px;
     position: fixed;
     width:100%;
     height:50px;
-    /* background-color:#DDDDDD;
-    color: #FFFFFF; */
     z-index:9999;
-    display: none;
-  
-  }
-  
-  .headerText {
+}
+
+.headerText {
     width: 30%;
     background: black;
     color: white;
@@ -40,22 +64,22 @@ label {
     left: 35%;
     /* below included for parallax remedy */
     z-index: 0;
-  }
-  
-  footer {
-    background-color: purple;
-  }
-  
-  #allContent {
-    background-color: black;
+}
+
+footer {
+    background-color: var(--primaryColor);
+}
+
+#allContent {
+    background-color: var(--secondaryColor);
     /* below included for parallax remedy */
     z-index: 1;
-  }
-  
-  .parallax {
+}
+
+.parallax {
     height: 100%;
     background-image: url('https://cdn.pixabay.com/photo/2017/12/24/23/58/triangle-3037789_960_720.png');
-  
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -63,28 +87,45 @@ label {
     background-size: cover;
     /* below included for parallax remedy */
     z-index: -1;
-  }
+}
 
-  #aboutMeSection {
+#aboutMeSection {
     padding-top: 10%;
     padding-bottom: 10%;
-  }
+    background-color: var(--softGrey);
+}
 
-  #portfolioSection {
+#portfolioSection {
     padding-top: 10%;
     padding-bottom: 10%;
-  }
+    background-color: var(--darkishGrey);
+}
 
-  form {
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  
-  body, html {
+form {
+    padding: 10% 2% 10% 2%;
+    margin-left: 7.65%;
+    margin-right: 7.65%;
+    background-color: var(--softGrey);
+}
+
+body, html {
     height: 100%;
     margin: 0;
-  }
-  
-  /* phone media queries go here */
+}
+
+/* phone media queries go here */
+
+@media only screen and (min-width:813px) {
+
+/* .showcaseShape:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0px 0px 10px 1px inset var(--secondaryColorLightOpacity);
+    z-index: 100;
+    width: 150px;
+
+
+} */
+
+    nav {
+        display: none;
+    }
+}
