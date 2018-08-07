@@ -27,11 +27,17 @@ $(document).ready(function() {
 
     function clearFields() {
 
-        $("input" && "textarea").each(function() {
+        $("input").each(function() {
     
           $(this).val("");
     
         });
+
+        $("textarea").each(function() {
+    
+            $(this).val("");
+      
+          });
     
     }
 
