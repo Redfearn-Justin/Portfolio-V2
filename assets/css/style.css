@@ -118,6 +118,7 @@ footer {
     box-shadow: 5px 5px 8px var(--primaryColorOpaque);
 }
 
+/* this has added a slight "whitespace" on the right of images -- UNRESOLVED*/
 .card-img-top {
     width: 250px;
     height: 250px;
