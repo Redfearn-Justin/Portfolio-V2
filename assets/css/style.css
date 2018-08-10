@@ -1,6 +1,6 @@
 :root {
-    --primaryColor: rgba(2, 61, 150, 0.658);
-    --primaryColor: rgb(2, 61, 150);
+    --primaryColorOpaque: rgba(31, 82, 95, 0.658);
+    --primaryColor: rgb(31, 82, 95);
     --softGrey: #d2d2d2;
     --darkishGrey: #b3b1b1;
     --darkerGrey: rgb(70, 69, 69);
@@ -117,7 +117,7 @@ footer {
     background-color: rgb(34, 34, 34);
 }
 
-.portfolioEntry {
+.card, #selfPicture {
     box-shadow: 5px 5px 8px var(--primaryColorOpaque);
 }
 
