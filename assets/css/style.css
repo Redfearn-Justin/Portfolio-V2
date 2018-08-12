@@ -128,6 +128,11 @@ footer {
     background-position: center;
 }
 
+#liriPic {
+    
+    background-size: auto;
+}
+
 .titleText {
     font-family: 'Dosis', sans-serif;
 }
