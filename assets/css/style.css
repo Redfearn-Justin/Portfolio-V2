@@ -14,8 +14,7 @@ hr {
 }
 
 #selfPicture {
-    height: 350px;
-    width: 350px;
+    width: 35%;
     background-size: cover;
 }
 
