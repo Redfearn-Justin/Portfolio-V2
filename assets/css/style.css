@@ -18,11 +18,11 @@ hr {
     background-size: cover;
 }
 
-.portfolioEntry {
-    height: 250px;
-    width: 250px;
+/* .portfolioEntry {
+    height: 25%;
+    width: 25%;
     margin: 2%;
-}
+} */
 
 label {
     color: black;
@@ -97,6 +97,10 @@ nav {
     background-color: var(--darkishGrey);
 }
 
+form:first-of-type button {
+    margin-bottom: 2%
+}
+
 form {
     padding: 10% 2% 10% 2%;
     margin-left: 7.7%;
@@ -120,10 +124,9 @@ footer {
     box-shadow: 5px 5px 8px var(--primaryColorOpaque);
 }
 
-/* this has added a slight "whitespace" on the right of images -- UNRESOLVED*/
 .card-img-top {
-    width: 250px;
-    height: 250px;
+    width: 25% auto 0;
+    height: 25% auto 0;
     background-position: center;
 }
 
@@ -137,15 +140,101 @@ footer {
 }
 
 
+/* MEDIA QUERIES */
+
+
 /* phone media queries go here */
 
-@media only screen and (min-width:813px) {
+@media only screen and (min-width:380px) and (max-width:599px) {
+
+    form:first-of-type button {
+        margin-left: 3%;
+        width: 30%;
+        margin-bottom: 1%;
+    }
+
+    form:first-of-type h5 {
+        margin-left: 1%;
+    }
+
+    .form-control {
+        width: 95%;
+        margin-left: 1%;
+    }
+
+    label {
+        margin-left: 1%
+    }
+
+    #portfolioRow1, #portfolioRow2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-top:5%;
+        margin-bottom:5%;
+    }
 
     .portfolioEntry {
         box-shadow: 5px 5px 8px var(--primaryColorOpaque);
     }
 
     nav {
-        display: none;
+        display: flex;
+    }
+}
+
+/* Tablet media queries  */
+@media only screen and (min-width:600px) and (max-width: 830px) {
+
+    .portfolioEntry {
+        box-shadow: 5px 5px 8px var(--primaryColorOpaque);
+    }
+
+    nav {
+        /* formally "none */
+        display: flex;
+    }
+
+    form:first-of-type button {
+        margin-left: 3%;
+        width: 30%;
+        margin-bottom: 1%;
+    }
+
+    form:first-of-type h5 {
+        margin-left: 1%;
+    }
+
+    .form-control {
+        width: 95%;
+        margin-left: 1%;
+    }
+
+    label {
+        margin-left: 1%
+    }
+
+    #portfolioRow1, #portfolioRow2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-top:5%;
+        margin-bottom:5%;
     }
 }
