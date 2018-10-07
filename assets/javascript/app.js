@@ -37,10 +37,9 @@ $(document).ready(function() {
     
             $(this).val("");
       
-          });
+        });
     
     }
-
 
     //on-functions
 
@@ -77,6 +76,8 @@ $(document).ready(function() {
     
     
     });
+
+    //Scroll effects for "title" text
 
 
     $(window).on("scroll", function() {
