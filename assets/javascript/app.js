@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     // Initialize Firebase
+    //=======================================================
     var config = {
         apiKey: "AIzaSyCUc2p24x8ASUskcbEeIbhNyeh7jxriZoY",
         authDomain: "portfolio-intel.firebaseapp.com",
@@ -13,6 +14,7 @@ $(document).ready(function() {
     firebase.initializeApp(config);
 
     //variables
+    //=======================================================
 
     var database = firebase.database();
 
@@ -20,6 +22,7 @@ $(document).ready(function() {
     
     
     //functions
+    //=======================================================
 
     function hideNavBar() {
         $("nav").hide();
@@ -42,6 +45,7 @@ $(document).ready(function() {
     }
 
     //on-functions
+    //=======================================================
 
     $("#formSubmitButton").on("click", function() {
 
@@ -77,8 +81,29 @@ $(document).ready(function() {
     
     });
 
-    //Scroll effects for "title" text
+    // Add smooth scrolling to anchors
+    $("a").on('click', function(event) {
 
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            $('html, body').animate({
+
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    //Scroll effects for "title" text
 
     $(window).on("scroll", function() {
 
@@ -110,7 +135,10 @@ $(document).ready(function() {
 
     });
 
+
+
     //function calls
+    //=======================================================
 
     hideNavBar();
 
