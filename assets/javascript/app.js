@@ -44,6 +44,10 @@ $(document).ready(function() {
     
     }
 
+    // function formValidation(name, email, message) {
+
+    // }
+
     //on-functions
     //=======================================================
 
@@ -58,6 +62,8 @@ $(document).ready(function() {
         var userEmail = $("#emailInput").val().trim();
     
         var userMessage = $("#messageInput").val().trim();
+
+        // formValidation(userName, userEmail, userMessage);
     
         // object to house user input; subsequently send to firebase
     
