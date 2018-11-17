@@ -1,0 +1,26 @@
+{
+  "name": "portfolioV2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "firebase": "^5.5.8",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redfearn-Justin/portfolioV2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redfearn-Justin/portfolioV2/issues"
+  },
+  "homepage": "https://github.com/Redfearn-Justin/portfolioV2#readme"
+}
