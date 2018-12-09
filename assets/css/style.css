@@ -128,15 +128,14 @@ footer {
     box-shadow: 5px 5px 8px var(--primaryColorOpaque);
 }
 
-.card-img-top {
-    width: 25% auto 0;
-    height: 25% auto 0;
-    background-position: center;
+.card {
+    height: 520px;
 }
 
-#liriPic, #bamazonPic {
-    
-    background-size: auto;
+.card-img-top {
+    width: 253px;
+    height: 253px;  
+    background-position: center;
 }
 
 .titleText {
